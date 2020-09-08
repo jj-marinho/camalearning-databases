@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS modalidades;
 CREATE TABLE modalidades (
-    index INTEGER PRIMARY KEY,
-    modality INTEGER
+    id INTEGER PRIMARY KEY,
+    descricao TEXT
 );
 
 DROP TABLE IF EXISTS cursos;
@@ -26,6 +26,7 @@ CREATE TABLE resultados (
     vagas INTEGER,
     nota_minima DOUBLE PRECISION,
     bonus DOUBLE PRECISION,
-    data_informacao TEXT
+    data_informacao TEXT,
+    PRIMARY KEY (id_curso, id_modalidade)
 );
 

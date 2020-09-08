@@ -1,0 +1,215 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2020-09-08T18:20:15.115Z",
+  "__export_source": "insomnia.desktop.app:v2020.3.3",
+  "resources": [
+    {
+      "_id": "req_039dc802498449e0bf1ba8a543c006e4",
+      "authentication": {},
+      "body": {
+        "mimeType": "",
+        "text": "{{ base_api }}/modalidades?\n\nid=eq.0"
+      },
+      "created": 1599525601310,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1599525637475,
+      "method": "GET",
+      "modified": 1599582528143,
+      "name": "Modalidade 0",
+      "parameters": [],
+      "parentId": "wrk_e06661e155ec4541a66f173a907c3bdf",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_api }}/modalidades?id=eq.0",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_e06661e155ec4541a66f173a907c3bdf",
+      "created": 1599525561160,
+      "description": "",
+      "modified": 1599589151390,
+      "name": "Camalearning - Databases",
+      "parentId": null,
+      "scope": null,
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_9cf3f09110ed4df7b6252c666e3cfb34",
+      "authentication": {},
+      "body": {
+        "mimeType": "",
+        "text": "{{ base_api }}/resultados?\n\nnota_minima=gte.800\n&bonus=eq.0"
+      },
+      "created": 1599525637425,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1599525637425,
+      "method": "GET",
+      "modified": 1599586562481,
+      "name": "Maiores cortes do SISU",
+      "parameters": [],
+      "parentId": "wrk_e06661e155ec4541a66f173a907c3bdf",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": false,
+      "url": "{{ base_api }}/resultados?nota_minima=gte.800&bonus=eq.0",
+      "_type": "request"
+    },
+    {
+      "_id": "req_ab5b409b0136446c8031022e660c39e3",
+      "authentication": {},
+      "body": {
+        "mimeType": "",
+        "text": "{{ base_api }}/cursos?\n\ncampus=like.*ICMC*"
+      },
+      "created": 1599526777677,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_1969429459564943a753e545acbab2b4",
+          "name": "Content-Type",
+          "value": "multipart/form-data"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1599525637325,
+      "method": "GET",
+      "modified": 1599582559012,
+      "name": "Informações sobre o ICMC",
+      "parameters": [],
+      "parentId": "wrk_e06661e155ec4541a66f173a907c3bdf",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_api }}/cursos?campus=like.*ICMC*",
+      "_type": "request"
+    },
+    {
+      "_id": "req_1d8350951e1f49f3851d455ce79814a0",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"id\" : 135941001, \n  \"nome\": \"CIÊNCIA DE DADOS\", \n  \"tipo\": \"Bacharelado\", \n  \"periodo\": \"Integral\", \n  \"vagas\": 20, \n  \"campus\" :\"INSTITUTO DE CIÊNCIAS MATEMÁTICAS E DE COMPUTAÇÃO - ICMC\",\n  \"cidade\":  \"São Carlos\",\n  \"estado\" : \"SP\",\n  \"universidade\": \"UNIVERSIDADE DE SÃO PAULO\",\n  \"sigla\": \"USP\"\n}"
+      },
+      "created": 1599583220303,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_8b73dfff91f84d0fbe22decaa501a1b5",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1599525637300,
+      "method": "POST",
+      "modified": 1599583556209,
+      "name": "Inserir novo curso de Ciência de Dados do ICMC",
+      "parameters": [],
+      "parentId": "wrk_e06661e155ec4541a66f173a907c3bdf",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_api }}/cursos",
+      "_type": "request"
+    },
+    {
+      "_id": "req_47eeacf46b5745ceb97339f154048a94",
+      "authentication": {},
+      "body": {
+        "mimeType": "",
+        "text": "{{ base_api }}/resultado_curso_modalidade?campus=like.*ICMC*&nome=like.*SISTEMAS*\n"
+      },
+      "created": 1599526907663,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1599525637275,
+      "method": "GET",
+      "modified": 1599588516822,
+      "name": "Notas de Corte do BSI no ICMC",
+      "parameters": [],
+      "parentId": "wrk_e06661e155ec4541a66f173a907c3bdf",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_api }}/resultado_curso_modalidade?campus=like.*ICMC*&nome=like.*SISTEMAS*",
+      "_type": "request"
+    },
+    {
+      "_id": "req_5ef5b56d8f8a47d58aa33821ce689dc8",
+      "authentication": {},
+      "body": {},
+      "created": 1599588659159,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1599525637225,
+      "method": "GET",
+      "modified": 1599589012476,
+      "name": "Dados Estatísticos sobre Estatística",
+      "parameters": [],
+      "parentId": "wrk_e06661e155ec4541a66f173a907c3bdf",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_api }}/media_corte?&nome=like.*ESTATÍSTICA*",
+      "_type": "request"
+    },
+    {
+      "_id": "env_cdfa28de5120b3c41dcdb0af57417a4f7ecdf1f2",
+      "color": null,
+      "created": 1599525561250,
+      "data": { "base_api": "159.69.217.238:3000" },
+      "dataPropertyOrder": { "&": ["base_api"] },
+      "isPrivate": false,
+      "metaSortKey": 1599525561250,
+      "modified": 1599525742817,
+      "name": "Base Environment",
+      "parentId": "wrk_e06661e155ec4541a66f173a907c3bdf",
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_cdfa28de5120b3c41dcdb0af57417a4f7ecdf1f2",
+      "cookies": [],
+      "created": 1599525561255,
+      "modified": 1599525561255,
+      "name": "Default Jar",
+      "parentId": "wrk_e06661e155ec4541a66f173a907c3bdf",
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_f2296597e6dd461997e083e9fdc2135b",
+      "contentType": "yaml",
+      "contents": "",
+      "created": 1599525561167,
+      "fileName": "Camalearning",
+      "modified": 1599525561167,
+      "parentId": "wrk_e06661e155ec4541a66f173a907c3bdf",
+      "_type": "api_spec"
+    }
+  ]
+}
