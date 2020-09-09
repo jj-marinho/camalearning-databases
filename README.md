@@ -48,7 +48,7 @@ db-anon-role = "postgres":
 - Baixar a extensão "PostgreSQL"
 - Ir em New Connection
 
-![Comandos%20e%20Comenta%CC%81rios%20-%20Camalearning%20SQL%20944598d29f9f425db8513163ab20acb6/Untitled.png](Comandos%20e%20Comenta%CC%81rios%20-%20Camalearning%20SQL%20944598d29f9f425db8513163ab20acb6/Untitled.png)
+![imagens_md/ads0.png](imagens_md/ads0.png)
 
 A senha é a mesma que usamos pra criar a base de dados no docker, no nosso caso "senha123"
 
@@ -56,7 +56,7 @@ A senha é a mesma que usamos pra criar a base de dados no docker, no nosso caso
 
 ### OBS 2: Porta do PostgreSQL (5432 OU 5433)
 
-![Comandos%20e%20Comenta%CC%81rios%20-%20Camalearning%20SQL%20944598d29f9f425db8513163ab20acb6/Untitled%201.png](Comandos%20e%20Comenta%CC%81rios%20-%20Camalearning%20SQL%20944598d29f9f425db8513163ab20acb6/Untitled%201.png)
+![imagens_md/ads1.png](imagens_md/ads1.png)
 
 # Queries
 
@@ -103,7 +103,7 @@ CREATE TABLE resultados (
 
 ```bash
 # Criando diretório para os dados
-mkdir /tmp/csv 
+mkdir /tmp/csv
 cd /tmp/csv
 
 # Baixando os dados
@@ -125,19 +125,19 @@ cd ~
 - Executar a seguinte Query para importar os dados
 
 ```sql
-COPY modalidades 
-FROM '/data/modalidades.csv' 
-DELIMITER ';' 
+COPY modalidades
+FROM '/data/modalidades.csv'
+DELIMITER ';'
 CSV HEADER;
 
-COPY cursos 
-FROM '/data/cursos.csv' 
-DELIMITER ';' 
+COPY cursos
+FROM '/data/cursos.csv'
+DELIMITER ';'
 CSV HEADER;
 
-COPY resultados 
-FROM '/data/resultados.csv' 
-DELIMITER ';' 
+COPY resultados
+FROM '/data/resultados.csv'
+DELIMITER ';'
 CSV HEADER;
 ```
 
